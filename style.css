@@ -1,0 +1,70 @@
+body {
+    background: url('clockbg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+#clockContainer {
+    position: relative;
+    top: 4vw;
+    margin: auto;
+    height: 40vw;
+    width: 40vw;
+    background: url('clock.png') no-repeat center center;
+    background-size: cover;
+    box-shadow: 0px 0px 40px #0ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0.72;
+}
+#hour, #minute, #second{
+    position: absolute;
+    border-radius: 10px;
+    transform-origin: bottom;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#hour{
+    height: 25%;
+    width: 2%;
+    top: 25%;
+    left: 49%;
+    opacity: 0.9;
+    background: linear-gradient(45deg, #333, #555);
+}
+
+#minute{
+    height: 35%;
+    width: 1.5%;
+    top: 15%;
+    left: 49.25%;
+    opacity:0.9;
+    background: linear-gradient(45deg, #444, #777);
+}
+
+
+#second{
+    height: 40%;
+    width: 1%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.9;
+    background: linear-gradient(45deg, red, darkred);
+}
+
+#centerDot {
+    position: absolute;
+    width: 4%;
+    height: 4%;
+    background: radial-gradient(circle, #fff, #bbb);
+    border-radius: 50%;
+    z-index: 10;
+    top: 48%;
+    left: 48%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
